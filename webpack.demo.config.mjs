@@ -57,7 +57,7 @@ export default {
       ],
     }),
     new InterpolateHtmlPlugin({
-      PUBLIC_URL: '/'
+      PUBLIC_URL: ''
     }),
     new HtmlWebpackPlugin({
       title: 'Home',
