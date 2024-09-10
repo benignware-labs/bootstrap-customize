@@ -2617,17 +2617,17 @@ a:hover {
 }
 
 *:focus,
-.form-check:focus {
-  box-shadow: 0 0 0 0.25rem rgba(from var(--bs-#0d6efd) r g b/0.25);
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(from var(--bs-primary) r g b/0.25);
 }
 
-.form-check:focus {
-  border-color: var(--bs-#0d6efd);
+.form-check-input:focus {
+  border-color: var(--bs-primary);
   outline: 0;
 }
-.form-check:checked {
+.form-check-input:checked {
   background-color: var(--bs-primary, #0d6efd);
-  border-color: #0d6efd;
+  border-color: var(--bs-primary, #0d6efd);
 }
 
 .accordion {
