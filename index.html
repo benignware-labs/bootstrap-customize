@@ -1,0 +1,548 @@
+<html>
+  <head>
+    <title>Bootstrap Customize</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="8c8701d7e599d696d072.css">
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#pagenav" data-bs-offset="50" tabindex="0">
+    <header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Customize</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#/" data-part="/bootstrap/parts/home.html" data-slot="main">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/about" data-part="/bootstrap/parts/about.html" data-slot="main">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/contact" data-part="/bootstrap/parts/contact.html" data-slot="main">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+</header>
+    <main class="d-flex">
+      <div class="sidebar p-3">
+        <form id="themeEditor" data-theme-editor>
+  <div class="accordion" id="accordionForm">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingGeneral">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral" aria-expanded="true" aria-controls="collapseGeneral">
+            General
+          </button>
+        </h2>
+        <div id="collapseGeneral" class="accordion-collapse collapse show" aria-labelledby="headingGeneral" data-bs-parent="#accordionForm">
+          <div class="accordion-body">
+            <!-- General section content goes here -->
+            <div class="mb-3">
+              <label class="form-label">Color Scheme</label>
+              <div>
+                  <div class="form-check-inline">
+                      <input id="theme-light" name="selector(body)::attribute(data-bs-theme)" type="radio" class="form-check-input" value="light" checked>
+                      <label for="theme-light" class="form-check-label">Light</label>
+                  </div>
+                  <div class="form-check-inline">
+                      <input id="theme-dark" name="selector(body)::attribute(data-bs-theme)" type="radio" class="form-check-input" value="dark">
+                      <label for="theme-dark" class="form-check-label">Dark</label>
+                  </div>
+              </div>
+            </div>
+            <div hidden data-hidden-if="[data-bs-theme='dark']">
+              <div class="mb-3">
+                  <label for="body-color-dark" class="form-label">Body Color (Dark)</label>
+                  <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color" data-sync="bs-body-color-dark">
+                  <input id="body-color-dark" name="selector([data-bs-theme=dark])::property(--bs-body-color)" type="text" class="form-control" data-sync="bs-body-color-dark" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-body-color-dark" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="body-bg-dark" class="form-label">Body Background (Dark)</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-body-bg-dark">
+                      <input id="body-bg-dark" name="selector([data-bs-theme=dark])::property(--bs-body-bg)" type="text" class="form-control" data-sync="bs-body-bg-dark" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-body-bg-dark" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="secondary-bg-dark" class="form-label">Secondary Background (Dark)</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-secondary-bg-dark">
+                      <input id="secondary-bg-dark" name="selector([data-bs-theme=dark])::property(--bs-secondary-bg)" type="text" class="form-control" data-sync="bs-secondary-bg-dark" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-secondary-bg-dark" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="tertiary-bg-dark" class="form-label">Tertiary Background (Dark)</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-tertiary-bg-dark">
+                      <input id="tertiary-bg-dark" name="selector([data-bs-theme=dark])::property(--bs-tertiary-bg)" type="text" class="form-control" data-sync="bs-tertiary-bg-dark" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-tertiary-bg-dark" data-type="invalid"></div>
+                  </div>
+              </div>
+          </div>
+          <div hidden data-hidden-if="[data-bs-theme='light']">
+              <div class="mb-3">
+                  <label for="body-color" class="form-label">Body Color</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-body-color">
+                      <input id="body-color" name="selector(:root, [data-bs-theme=light])::property(--bs-body-color)" type="text" class="form-control" data-sync="bs-body-color" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-body-color" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="body-bg" class="form-label">Body Background</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-body-bg">
+                      <input id="body-bg" name="selector(:root, [data-bs-theme=light])::property(--bs-body-bg)" type="text" class="form-control" data-sync="bs-body-bg" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-body-bg" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="secondary-bg" class="form-label">Secondary Background</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-secondary-bg">
+                      <input id="secondary-bg" name="selector(:root, [data-bs-theme=light])::property(--bs-secondary-bg)" type="text" class="form-control" data-sync="bs-secondary-bg" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-secondary-bg" data-type="invalid"></div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="tertiary-bg" class="form-label">Tertiary Background</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-tertiary-bg">
+                      <input id="tertiary-bg" name="selector(:root, [data-bs-theme=light])::property(--bs-tertiary-bg)" type="text" class="form-control" data-sync="bs-tertiary-bg" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-tertiary-bg" data-type="invalid"></div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThemeColors">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThemeColors" aria-expanded="false" aria-controls="collapseThemeColors">
+            Theme Colors
+          </button>
+        </h2>
+        <div id="collapseThemeColors" class="accordion-collapse collapse" aria-labelledby="headingThemeColors" data-bs-parent="#accordionForm">
+          <div class="accordion-body">
+            <!-- Theme Colors section content goes here -->
+            <div class="mb-3">
+              <label for="primary-color" class="form-label">Primary</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color" data-sync="bs-primary">
+                  <input id="primary-color" name="selector(:root, [data-bs-theme=light])::property(--bs-primary)" type="text" class="form-control" data-sync="bs-primary" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-primary" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="secondary-color" class="form-label">Secondary</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color"  data-sync="bs-secondary">
+                  <input id="secondary-color" name="selector(:root, [data-bs-theme=light])::property(--bs-secondary)" type="text" class="form-control" data-sync="bs-secondary" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-secondary" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="success-color" class="form-label">Success</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color"  data-sync="bs-success">
+                  <input id="success-color" name="selector(:root, [data-bs-theme=light])::property(--bs-success)" type="text" class="form-control" data-sync="bs-success" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-success" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="info-color" class="form-label">Info</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color"  data-sync="bs-info">
+                  <input id="info-color" name="selector(:root, [data-bs-theme=light])::property(--bs-info)" type="text" class="form-control" data-sync="bs-info" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-info" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="warning-color" class="form-label">Warning</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color"  data-sync="bs-warning">
+                  <input id="warning-color" name="selector(:root, [data-bs-theme=light])::property(--bs-warning)" type="text" class="form-control" data-sync="bs-warning" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-warning" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="danger-color" class="form-label">Danger</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color"  data-sync="bs-danger">
+                  <input id="danger-color" name="selector(:root, [data-bs-theme=light])::property(--bs-danger)" type="text" class="form-control" data-sync="bs-danger" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-danger" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="light-color" class="form-label">Light</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color" data-sync="bs-light">
+                  <input id="light-color" name="selector(:root, [data-bs-theme=light])::property(--bs-light)" type="text" class="form-control" data-sync="bs-light" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-light" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="dark-color" class="form-label">Dark</label>
+              <div class="input-group has-validation">
+                  <input type="color" class="form-control form-control-color" data-sync="bs-dark">
+                  <input id="dark-color" name="selector(:root, [data-bs-theme=light])::property(--bs-dark)" type="text" class="form-control" data-sync="bs-dark" data-type="color">
+                  <div class="invalid-feedback" data-sync="bs-dark" data-type="invalid"></div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTypography">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTypography" aria-expanded="false" aria-controls="collapseTypography">
+            Typography
+          </button>
+        </h2>
+        <div id="collapseTypography" class="accordion-collapse collapse" aria-labelledby="headingTypography" data-bs-parent="#accordionForm">
+          <div class="accordion-body">
+            <!-- Typography section content goes here -->
+            <div class="mb-3">
+              <label for="font-family" class="form-label">Font Family</label>
+              <div class="font-selector" data-type="font">
+                  <input
+                    id="font-family"
+                    name="selector(:root, [data-bs-theme='light'])::property(--bs-font-sans-serif)"
+                    type="text"
+                    class="form-control"
+                    placeholder="Select a font"
+                    data-type="font"
+                    data-dropdown-class="dropdown-menu"
+                    data-dropdown-item-class="dropdown-item"
+                  />
+                  <div data-font-dropdown class="font-dropdown dropdown-menu w-100">
+                      <!-- Dropdown items will be injected here by fontInput.mjs -->
+                  </div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="font-size" class="form-label">Body Font Size</label>
+              <div class="input-group has-validation">
+                  <input type="number" class="form-control" data-sync="bs-body-font-size" />
+                  <input id="font-size" class="form-control" type="hidden" name="selector(:root, [data-bs-theme='light'])::property(--bs-body-font-size)" data-type="value" value="16px" data-sync="bs-body-font-size" data-step="1px" data-min="12px" data-max="20px" required>
+                  <select class="form-control" data-sync="bs-body-font-size">
+                      <option value="px">px</option>
+                      <option value="em">em</option>
+                      <option value="rem">rem</option>
+                  </select>
+                  <div class="invalid-feedback" data-sync="bs-body-font-size" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="font-weight" class="form-label">Body Font Weight</label>
+              <div class="input-group has-validation">
+                  <input type="range" class="form-control" data-sync="bs-body-font-weight" />
+                  <input id="font-weight" class="form-control" type="hidden" name="selector(:root, [data-bs-theme='light'])::property(--bs-body-font-weight)" data-type="value" data-sync="bs-body-font-weight" data-step="100" data-min="100" data-max="900" required>
+                  <div class="invalid-feedback" data-sync="bs-body-font-weight" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="body-line-height" class="form-label">Body Line Height</label>
+              <div class="input-group has-validation">
+                  <input type="number" class="form-control" data-sync="bs-body-line-height" />
+                  <input id="body-line-height" class="form-control" type="hidden" name="selector(:root, [data-bs-theme='light'])::property(--bs-body-line-height)" data-type="value" value="16px" data-sync="bs-body-line-height" data-step="0.125" data-min="1.45" data-max="1.55" required>
+                  <div class="invalid-feedback" data-sync="bs-body-line-height" data-type="invalid"></div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingBorders">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBorders" aria-expanded="false" aria-controls="collapseBorders">
+            Borders
+          </button>
+        </h2>
+        <div id="collapseBorders" class="accordion-collapse collapse" aria-labelledby="headingBorders" data-bs-parent="#accordionForm">
+          <div class="accordion-body">
+            <!-- Borders section content goes here -->
+            <div hidden data-hidden-if="[data-bs-theme='dark']">
+              <div class="mb-3">
+                  <label for="border-color-dark" class="form-label">Border Color (Dark)</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-border-color-dark">
+                      <input id="border-color-dark" name="selector([data-bs-theme=dark])::property(--bs-border-color)" type="text" class="form-control" data-sync="bs-border-color-dark" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-border-color-dark" data-type="invalid"></div>
+                  </div>
+              </div>
+          </div>
+    
+          <div hidden data-hidden-if="[data-bs-theme='light']">
+              <div class="mb-3">
+                  <label for="border-color" class="form-label">Border Color</label>
+                  <div class="input-group has-validation">
+                      <input type="color" class="form-control form-control-color" data-sync="bs-border-color">
+                      <input id="border-color" name="selector(:root, [data-bs-theme=light])::property(--bs-border-color)" type="text" class="form-control" data-sync="bs-border-color" data-type="color">
+                      <div class="invalid-feedback" data-sync="bs-border-color" data-type="invalid"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="border-width" class="form-label">Border Width</label>
+              <div class="input-group has-validation">
+                  <input type="number" class="form-control" data-sync="bs-border-width" />
+                  <input id="border-width" class="form-control" type="hidden" name="selector(:root, [data-bs-theme='light'])::property(--bs-border-width)" data-type="value" value="1px" data-sync="bs-border-width" data-step="0.25px" data-min="1px" data-max="4px" required>
+                  <select class="form-control" data-sync="bs-border-width">
+                      <option value="px">px</option>
+                      <option value="rem">rem</option>
+                  </select>
+                  <div class="invalid-feedback" data-sync="bs-border-width" data-type="invalid"></div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="border-radius" class="form-label">Border Radius</label>
+              <div class="input-group has-validation">
+                  <input type="number" class="form-control" data-sync="bs-border-radius" />
+                  <input id="border-radius" class="form-control" type="hidden" name="selector(:root, [data-bs-theme='light'])::property(--bs-border-radius)" data-type="value" value="1px" data-sync="bs-border-radius" data-step="0.25px" data-min="0px" data-max="8px" required>
+                  <select class="form-control" data-sync="bs-border-radius">
+                      <option value="px">px</option>
+                      <option value="rem">rem</option>
+                  </select>
+                  <div class="invalid-feedback" data-sync="bs-border-radius" data-type="invalid"></div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <button data-bs-toggle="modal" data-bs-target="#stylesheetModal" type="button" class="btn btn-primary mt-3" id="show-stylesheet-btn">Code</button>
+</form>      </div>
+      <div class="main py-4">
+        <div class="container">
+          <section id="contentExamples" class="mb-4">
+  <h1 class="mb-3">Content</h1>
+  <section id="headings" class="mb-4">
+    <h2 class="mb-3">Headings</h2>
+    <div class="bd-example">
+      <h1>h1. Bootstrap heading</h1>
+      <h2>h2. Bootstrap heading</h2>
+      <h3>h3. Bootstrap heading</h3>
+      <h4>h4. Bootstrap heading</h4>
+      <h5>h5. Bootstrap heading</h5>
+      <h6>h6. Bootstrap heading</h6>
+    </div>
+  </section>
+  <h2 class="mb-3">Links</h2>
+  <div class="bd-example">
+    <a href="#" class="d-block mb-2">Normal link</a>
+  </div>
+</section>
+<!-- Components Section -->
+<section id="components" class="mb-4">
+  <h1 class="mb-3">Components</h1>
+  <section id="alerts" class="mb-4">
+    <h2 class="mb-3">Alerts</h2>
+    <div class="bd-example">
+      <div class="alert alert-primary mb-2" role="alert">A simple primary alert—check it out!</div>
+      <div class="alert alert-secondary mb-2" role="alert">A simple secondary alert—check it out!</div>
+      <div class="alert alert-success mb-2" role="alert">A simple success alert—check it out!</div>
+      <div class="alert alert-danger mb-2" role="alert">A simple danger alert—check it out!</div>
+      <div class="alert alert-warning mb-2" role="alert">A simple warning alert—check it out!</div>
+      <div class="alert alert-info mb-2" role="alert">A simple info alert—check it out!</div>
+      <div class="alert alert-light mb-2" role="alert">A simple light alert—check it out!</div>
+      <div class="alert alert-dark mb-2" role="alert">A simple dark alert—check it out!</div>
+    </div>
+  </section>
+  <section id="buttons" class="mb-4">
+    <h2 class="mb-3">Buttons</h2>
+    <div class="bd-example">
+      <button class="btn btn-primary me-2 mb-2">Primary</button>
+      <button class="btn btn-secondary me-2 mb-2">Secondary</button>
+      <button class="btn btn-success me-2 mb-2">Success</button>
+      <button class="btn btn-danger me-2 mb-2">Danger</button>
+      <button class="btn btn-warning me-2 mb-2">Warning</button>
+      <button class="btn btn-info me-2 mb-2">Info</button>
+      <button class="btn btn-light me-2 mb-2">Light</button>
+      <button class="btn btn-dark me-2 mb-2">Dark</button>
+    </div>
+    <h2 class="mb-3">Outline Buttons</h2>
+    <div class="bd-example">
+      <button class="btn btn-outline-primary me-2 mb-2">Outline Primary</button>
+      <button class="btn btn-outline-secondary me-2 mb-2">Outline Secondary</button>
+      <button class="btn btn-outline-success me-2 mb-2">Outline Success</button>
+      <button class="btn btn-outline-danger me-2 mb-2">Outline Danger</button>
+      <button class="btn btn-outline-warning me-2 mb-2">Outline Warning</button>
+      <button class="btn btn-outline-info me-2 mb-2">Outline Info</button>
+      <button class="btn btn-outline-light me-2 mb-2">Outline Light</button>
+      <button class="btn btn-outline-dark me-2 mb-2">Outline Dark</button>
+    </div>
+  </section>
+  
+</section>
+<section id="utilities" class="mb-4">
+  <h1 class="mb-3">Utilities</h1>
+  <h2 id="textUtilities" class="mb-3">Text</h2>
+  <div class="bd-example">
+    <p class="text-primary">.text-primary</p>
+    <p class="text-primary-emphasis">.text-primary-emphasis</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-success-emphasis">.text-success-emphasis</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-danger-emphasis">.text-danger-emphasis</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-warning-emphasis">.text-warning-emphasis</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-info-emphasis">.text-info-emphasis</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-light-emphasis">.text-light-emphasis</p>
+    <p class="text-dark bg-white">.text-dark</p>
+    <p class="text-dark-emphasis">.text-dark-emphasis</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-body-emphasis">.text-body-emphasis</p>
+    <p class="text-body-secondary">.text-body-secondary</p>
+    <p class="text-body-tertiary">.text-body-tertiary</p>
+    <p class="text-black bg-white">.text-black</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50 bg-white">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+  </div>
+  <h2 id="coloredLinks" class="mb-3">Colored Links</h2>
+  <div class="bd-example">
+    <p><a href="#" class="link-primary">Primary link</a></p>
+    <p><a href="#" class="link-secondary">Secondary link</a></p>
+    <p><a href="#" class="link-success">Success link</a></p>
+    <p><a href="#" class="link-danger">Danger link</a></p>
+    <p><a href="#" class="link-warning">Warning link</a></p>
+    <p><a href="#" class="link-info">Info link</a></p>
+    <p><a href="#" class="link-light">Light link</a></p>
+    <p><a href="#" class="link-dark">Dark link</a></p>
+    <p><a href="#" class="link-body-emphasis">Emphasis link</a></p>
+  </div>
+  <h2 id="backgrounds" class="mb-3">Backgrounds</h2>
+  <div class="bd-example">
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">.bg-primary-subtle</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">.bg-secondary-subtle</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-success-subtle text-success-emphasis">.bg-success-subtle</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">.bg-danger-subtle</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">.bg-warning-subtle</div>
+    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">.bg-info-subtle</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-light-subtle text-light-emphasis">.bg-light-subtle</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-dark-subtle text-dark-emphasis">.bg-dark-subtle</div>
+    <div class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</div>
+    <div class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</div>
+    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+  </div>
+  <h2 id="colorAndBackground">Color and Background</h2>
+  <div class="bd-example">
+    <div class="text-bg-primary p-3">Primary with contrasting color</div>
+    <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+    <div class="text-bg-success p-3">Success with contrasting color</div>
+    <div class="text-bg-danger p-3">Danger with contrasting color</div>
+    <div class="text-bg-warning p-3">Warning with contrasting color</div>
+    <div class="text-bg-info p-3">Info with contrasting color</div>
+    <div class="text-bg-light p-3">Light with contrasting color</div>
+    <div class="text-bg-dark p-3">Dark with contrasting color</div>
+  </div>
+  <h2 id="borders" class="mb-3">Borders</h2>
+  <div class="bd-example">
+    <div class="bd-example-border-utils">
+      <span class="border border-primary"></span>
+      <span class="border border-primary-subtle"></span>
+      <span class="border border-secondary"></span>
+      <span class="border border-secondary-subtle"></span>
+      <span class="border border-success"></span>
+      <span class="border border-success-subtle"></span>
+      <span class="border border-danger"></span>
+      <span class="border border-danger-subtle"></span>
+      <span class="border border-warning"></span>
+      <span class="border border-warning-subtle"></span>
+      <span class="border border-info"></span>
+      <span class="border border-info-subtle"></span>
+      <span class="border border-light"></span>
+      <span class="border border-light-subtle"></span>
+      <span class="border border-dark"></span>
+      <span class="border border-dark-subtle"></span>
+      <span class="border border-black"></span>
+      <span class="border border-white"></span>
+    </div>
+  </div>
+</section>        </div>
+      </div>
+      <div class="toc">
+        <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+<hr class="d-none d-md-block my-2 ms-3">
+<nav id="pagenav">
+  <ul>
+    <li>
+      <a href="#contentExamples">Content</a>
+      <ul>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#components">Components</a>
+      <ul>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#utilities">Utilities</a>
+      <ul>
+        <li><a href="#textUtilities">Text</a></li>
+        <li><a href="#coloredLinks">Colored Links</a></li>
+        <li><a href="#backgrounds">Backgrounds</a></li>
+        <li><a href="#borders">Borders</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>      </div>
+    </main>
+    <footer class="py-3 mt-4 border-top bg-body-tertiary">
+  <div class="container text-center">
+    &copy; 2024 Benignware
+  </div>
+</footer>    <!-- Modal -->
+<div class="modal fade" id="stylesheetModal" tabindex="-1" aria-labelledby="stylesheetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stylesheetModalLabel">Generated Stylesheet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <pre><code data-theme-editor-code="#themeEditor"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-theme-editor-copy>Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+</div>    <script src="/themeEditorKit.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/popper.js"></script>
+  </body>
+</html>
