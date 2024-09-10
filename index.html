@@ -1,27 +1,24 @@
 <html>
   <head>
     <title>Bootstrap Customize</title>
-    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="8c8701d7e599d696d072.css">
   <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
   <body data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#pagenav" data-bs-offset="50" tabindex="0">
     <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstrap Customize</a>
+        <a class="navbar-brand" href="/">Bootstrap Customize</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#/" data-part="/bootstrap/parts/home.html" data-slot="main">Home</a>
+                    <a class="nav-link" href="https://github.com/benignware-labs/bootstrap-customize" data-slot="main">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#/about" data-part="/bootstrap/parts/about.html" data-slot="main">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#/contact" data-part="/bootstrap/parts/contact.html" data-slot="main">Contact</a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#stylesheetModal">About</a>
                 </li>
             </ul>
         </div>
@@ -541,8 +538,26 @@
       </div>
     </div>
   </div>
-</div>    <script src="/themeEditorKit.min.js"></script>
-    <script src="/bootstrap.min.js"></script>
-    <script src="/popper.js"></script>
+</div>    <!-- Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">About Bootstrap Customize</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Drop-in add-on for Bootstrap to customize theme colors at runtime.<br/>
+        <br/>
+        Learn more <a href="https://github.com/benignware-labs/bootstrap-customize" target="_blank">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    <script src="themeEditorKit.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
   </body>
 </html>
