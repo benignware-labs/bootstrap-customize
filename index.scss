@@ -8,18 +8,8 @@
 @import "~bootstrap/scss/_utilities.scss";
 
 
-// scss-docs-end
-
-// $btn-hover-bg-shade-amount: 40%;
-// :root {
-//   --#{$prefix}link-color: var(--#{$prefix}primary);
-//   // --#{$prefix}link-hover-color: color-mix(in srgb, var(--#{$prefix}link-color), $link-shade-percentage);
-//   --#{$prefix}focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / var(--#{$prefix}focus-ring-opacity, $focus-ring-opacity));
-// }
-
 :root, [data-bs-theme=light] {
   --#{$prefix}link-color: var(--#{$prefix}primary);
-  // --#{$prefix}link-hover-color: color-mix(in srgb, var(--#{$prefix}link-color), $link-shade-percentage);
   --#{$prefix}focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / var(--#{$prefix}focus-ring-opacity, $focus-ring-opacity));
   // Colors
   @each $name, $value in $theme-colors {
@@ -232,8 +222,8 @@ a {
 }
 
 *,
-.form-check {
-  $focus-ring-color: rgba(from var(--#{$prefix}#{$primary}) r g b / $focus-ring-opacity);
+.form-check-input {
+  $focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / #{$focus-ring-opacity});
   $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
 
   &:focus {
@@ -241,15 +231,15 @@ a {
   }
 }
 
-.form-check {
+.form-check-input {
   &:focus {
-    border-color: var(--#{$prefix}#{$primary});
+    border-color: var(--#{$prefix}primary);
     outline: 0;
   }
 
   &:checked {
     background-color: var(--#{$prefix}primary, #{$form-check-input-checked-bg-color});
-    border-color: $form-check-input-checked-border-color;
+    border-color: var(--#{$prefix}primary, #{$form-check-input-checked-border-color});
   }
 }
 
