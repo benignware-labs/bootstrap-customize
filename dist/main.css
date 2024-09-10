@@ -1,0 +1,2638 @@
+/*!*********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./index.scss ***!
+  \*********************************************************************************************************************************/
+:root {
+  --bs-link-color: var(--bs-primary);
+  --bs-focus-ring-color: rgba(from var(--bs-primary) r g b / var(--bs-focus-ring-opacity, $focus-ring-opacity));
+}
+
+:root, [data-bs-theme=light] {
+  --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary), #000 60%);
+  --bs-secondary-text-emphasis: color-mix(in srgb, var(--bs-secondary), #000 60%);
+  --bs-success-text-emphasis: color-mix(in srgb, var(--bs-success), #000 60%);
+  --bs-info-text-emphasis: color-mix(in srgb, var(--bs-info), #000 60%);
+  --bs-warning-text-emphasis: color-mix(in srgb, var(--bs-warning), #000 60%);
+  --bs-danger-text-emphasis: color-mix(in srgb, var(--bs-danger), #000 60%);
+  --bs-light-text-emphasis: var(--bs-gray-700, #495057);
+  --bs-dark-text-emphasis: var(--bs-gray-700, #495057);
+  --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary), #fff 80%);
+  --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary), #fff 80%);
+  --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success), #fff 80%);
+  --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info), #fff 80%);
+  --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning), #fff 80%);
+  --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger), #fff 80%);
+  --bs-light-bg-subtle: color-mix(in srgb, var(--bs-gray-100, #f8f9fa), var(--bs-white, #fff));
+  --bs-dark-bg-subtle: var(--bs-gray-400, #ced4da);
+  --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary), #000 60%);
+  --bs-secondary-border-subtle: color-mix(in srgb, var(--bs-secondary), #000 60%);
+  --bs-success-border-subtle: color-mix(in srgb, var(--bs-success), #000 60%);
+  --bs-info-border-subtle: color-mix(in srgb, var(--bs-info), #000 60%);
+  --bs-warning-border-subtle: color-mix(in srgb, var(--bs-warning), #000 60%);
+  --bs-danger-border-subtle: color-mix(in srgb, var(--bs-danger), #000 60%);
+  --bs-light-border-subtle: var(--bs-gray-200, #e9ecef);
+  --bs-dark-border-subtle: var(--bs-gray-500, #adb5bd);
+}
+
+[data-bs-theme=dark] {
+  --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary), #fff 40%);
+  --bs-secondary-text-emphasis: color-mix(in srgb, var(--bs-secondary), #fff 40%);
+  --bs-success-text-emphasis: color-mix(in srgb, var(--bs-success), #fff 40%);
+  --bs-info-text-emphasis: color-mix(in srgb, var(--bs-info), #fff 40%);
+  --bs-warning-text-emphasis: color-mix(in srgb, var(--bs-warning), #fff 40%);
+  --bs-danger-text-emphasis: color-mix(in srgb, var(--bs-danger), #fff 40%);
+  --bs-light-text-emphasis: var(--bs-gray-100, #f8f9fa);
+  --bs-dark-text-emphasis: var(--bs-gray-300, #dee2e6);
+  --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary), #000 80%);
+  --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary), #000 80%);
+  --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success), #000 80%);
+  --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info), #000 80%);
+  --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning), #000 80%);
+  --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger), #000 80%);
+  --bs-light-bg-subtle: var(--bs-gray-800, #343a40);
+  --bs-dark-bg-subtle: color-mix(in srgb, var(--bs-gray-800, #343a40), var(--bs-black, #000));
+  --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary), #fff 40%);
+  --bs-secondary-border-subtle: color-mix(in srgb, var(--bs-secondary), #fff 40%);
+  --bs-success-border-subtle: color-mix(in srgb, var(--bs-success), #fff 40%);
+  --bs-info-border-subtle: color-mix(in srgb, var(--bs-info), #fff 40%);
+  --bs-warning-border-subtle: color-mix(in srgb, var(--bs-warning), #fff 40%);
+  --bs-danger-border-subtle: color-mix(in srgb, var(--bs-danger), #fff 40%);
+  --bs-light-border-subtle: var(--bs-gray-700, #495057);
+  --bs-dark-border-subtle: var(--bs-gray-800, #343a40);
+}
+
+a {
+  color: rgba(from var(--bs-link-color, #0d6efd) r g b/var(--bs-link-opacity, 1));
+}
+a:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-link-color, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-link-color, #0d6efd)) r g b/var(--bs-link-hover-opacity, 1));
+}
+
+.text-primary {
+  color: rgba(from var(--bs-primary, #0d6efd) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-primary,
+.link-primary {
+  text-decoration-color: rgba(from var(--bs-primary, #0d6efd) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-primary:hover,
+.link-primary:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-primary, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-primary, #0d6efd)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-primary {
+  color: rgba(from var(--bs-primary, #0d6efd) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-primary:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-primary, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-primary, #0d6efd)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-primary,
+.text-bg-primary {
+  background-color: rgba(from var(--bs-primary, #0d6efd) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-primary,
+.text-bg-primary {
+  color: rgb(from var(--bs-primary, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-primary {
+  border-color: rgba(from var(--bs-primary, #0d6efd) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-secondary {
+  color: rgba(from var(--bs-secondary, #6c757d) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-secondary,
+.link-secondary {
+  text-decoration-color: rgba(from var(--bs-secondary, #6c757d) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-secondary:hover,
+.link-secondary:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-secondary, #6c757d) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-secondary, #6c757d)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-secondary {
+  color: rgba(from var(--bs-secondary, #6c757d) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-secondary:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-secondary, #6c757d) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-secondary, #6c757d)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-secondary,
+.text-bg-secondary {
+  background-color: rgba(from var(--bs-secondary, #6c757d) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-secondary,
+.text-bg-secondary {
+  color: rgb(from var(--bs-secondary, #6c757d) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-secondary {
+  border-color: rgba(from var(--bs-secondary, #6c757d) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-success {
+  color: rgba(from var(--bs-success, #198754) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-success,
+.link-success {
+  text-decoration-color: rgba(from var(--bs-success, #198754) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-success:hover,
+.link-success:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-success, #198754) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-success, #198754)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-success {
+  color: rgba(from var(--bs-success, #198754) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-success:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-success, #198754) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-success, #198754)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-success,
+.text-bg-success {
+  background-color: rgba(from var(--bs-success, #198754) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-success,
+.text-bg-success {
+  color: rgb(from var(--bs-success, #198754) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-success {
+  border-color: rgba(from var(--bs-success, #198754) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-info {
+  color: rgba(from var(--bs-info, #0dcaf0) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-info,
+.link-info {
+  text-decoration-color: rgba(from var(--bs-info, #0dcaf0) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-info:hover,
+.link-info:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-info, #0dcaf0) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-info, #0dcaf0)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-info {
+  color: rgba(from var(--bs-info, #0dcaf0) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-info:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-info, #0dcaf0) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-info, #0dcaf0)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-info,
+.text-bg-info {
+  background-color: rgba(from var(--bs-info, #0dcaf0) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-info,
+.text-bg-info {
+  color: rgb(from var(--bs-info, #0dcaf0) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-info {
+  border-color: rgba(from var(--bs-info, #0dcaf0) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-warning {
+  color: rgba(from var(--bs-warning, #ffc107) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-warning,
+.link-warning {
+  text-decoration-color: rgba(from var(--bs-warning, #ffc107) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-warning:hover,
+.link-warning:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-warning, #ffc107) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-warning, #ffc107)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-warning {
+  color: rgba(from var(--bs-warning, #ffc107) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-warning:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-warning, #ffc107) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-warning, #ffc107)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-warning,
+.text-bg-warning {
+  background-color: rgba(from var(--bs-warning, #ffc107) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-warning,
+.text-bg-warning {
+  color: rgb(from var(--bs-warning, #ffc107) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-warning {
+  border-color: rgba(from var(--bs-warning, #ffc107) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-danger {
+  color: rgba(from var(--bs-danger, #dc3545) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-danger,
+.link-danger {
+  text-decoration-color: rgba(from var(--bs-danger, #dc3545) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-danger:hover,
+.link-danger:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-danger, #dc3545) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-danger, #dc3545)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-danger {
+  color: rgba(from var(--bs-danger, #dc3545) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-danger:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-danger, #dc3545) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-danger, #dc3545)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-danger,
+.text-bg-danger {
+  background-color: rgba(from var(--bs-danger, #dc3545) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-danger,
+.text-bg-danger {
+  color: rgb(from var(--bs-danger, #dc3545) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-danger {
+  border-color: rgba(from var(--bs-danger, #dc3545) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-light {
+  color: rgba(from var(--bs-light, #f8f9fa) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-light,
+.link-light {
+  text-decoration-color: rgba(from var(--bs-light, #f8f9fa) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-light:hover,
+.link-light:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-light, #f8f9fa) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-light, #f8f9fa)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-light {
+  color: rgba(from var(--bs-light, #f8f9fa) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-light:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-light, #f8f9fa) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-light, #f8f9fa)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-light,
+.text-bg-light {
+  background-color: rgba(from var(--bs-light, #f8f9fa) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-light,
+.text-bg-light {
+  color: rgb(from var(--bs-light, #f8f9fa) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-light {
+  border-color: rgba(from var(--bs-light, #f8f9fa) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.text-dark {
+  color: rgba(from var(--bs-dark, #212529) r g b/var(--bs-text-opacity, 1)) !important;
+}
+
+.link-underline-dark,
+.link-dark {
+  text-decoration-color: rgba(from var(--bs-dark, #212529) r g b/var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-underline-dark:hover,
+.link-dark:hover {
+  text-decoration-color: rgba(from color-mix(in srgb, rgb(from var(--bs-dark, #212529) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-dark, #212529)) r g b/var(--bs-link-underline-hover-opacity, 1)) !important;
+}
+
+.link-dark {
+  color: rgba(from var(--bs-dark, #212529) r g b/var(--bs-link-opacity, 1)) !important;
+}
+.link-dark:hover {
+  color: rgba(from color-mix(in srgb, rgb(from var(--bs-dark, #212529) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-dark, #212529)) r g b/var(--bs-link-hover-opacity, 1)) !important;
+}
+
+.bg-dark,
+.text-bg-dark {
+  background-color: rgba(from var(--bs-dark, #212529) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-dark,
+.text-bg-dark {
+  color: rgb(from var(--bs-dark, #212529) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ));
+}
+
+.border-dark {
+  border-color: rgba(from var(--bs-dark, #212529) r g b/var(--bs-border-opacity, 1)) !important;
+}
+
+.bg-body-secondary {
+  background-color: rgba(from var(--bs-secondary-bg, #e9ecef) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-body-tertiary {
+  background-color: rgba(from var(--bs-tertiary-bg, #f8f9fa) r g b/var(--bs-bg-opacity, 1)) !important;
+}
+
+.btn-primary {
+  --bs-btn-color: rgb(from var(--bs-primary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-primary) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-primary)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-primary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-primary));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-primary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-primary));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-primary) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-primary)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-primary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-primary));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-primary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-primary));
+  --bs-btn-disabled-color: rgb(from var(--bs-primary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: rgb(from var(--bs-primary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-primary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-gradient: none;
+}
+
+.btn-secondary {
+  --bs-btn-color: rgb(from var(--bs-secondary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-secondary) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-secondary)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-secondary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-secondary));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-secondary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-secondary));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-secondary) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-secondary)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-secondary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-secondary));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-secondary) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-secondary));
+  --bs-btn-disabled-color: rgb(from var(--bs-secondary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-secondary);
+  --bs-btn-disabled-border-color: var(--bs-secondary);
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-color: rgb(from var(--bs-secondary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-secondary);
+  --bs-btn-hover-border-color: var(--bs-secondary);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-secondary) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-secondary);
+  --bs-btn-active-border-color: var(--bs-secondary);
+  --bs-btn-disabled-color: var(--bs-secondary);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-secondary);
+  --bs-gradient: none;
+}
+
+.btn-success {
+  --bs-btn-color: rgb(from var(--bs-success) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-success);
+  --bs-btn-border-color: var(--bs-success);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-success) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-success)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-success) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-success));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-success) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-success));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-success) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-success)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-success) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-success));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-success) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-success));
+  --bs-btn-disabled-color: rgb(from var(--bs-success) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-success);
+  --bs-btn-disabled-border-color: var(--bs-success);
+}
+
+.btn-outline-success {
+  --bs-btn-color: var(--bs-success);
+  --bs-btn-border-color: var(--bs-success);
+  --bs-btn-hover-color: rgb(from var(--bs-success) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-success);
+  --bs-btn-hover-border-color: var(--bs-success);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-success) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-success);
+  --bs-btn-active-border-color: var(--bs-success);
+  --bs-btn-disabled-color: var(--bs-success);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-success);
+  --bs-gradient: none;
+}
+
+.btn-info {
+  --bs-btn-color: rgb(from var(--bs-info) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-info);
+  --bs-btn-border-color: var(--bs-info);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-info) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-info)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-info) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-info));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-info) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-info));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-info) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-info)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-info) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-info));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-info) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-info));
+  --bs-btn-disabled-color: rgb(from var(--bs-info) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-info);
+  --bs-btn-disabled-border-color: var(--bs-info);
+}
+
+.btn-outline-info {
+  --bs-btn-color: var(--bs-info);
+  --bs-btn-border-color: var(--bs-info);
+  --bs-btn-hover-color: rgb(from var(--bs-info) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-info);
+  --bs-btn-hover-border-color: var(--bs-info);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-info) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-info);
+  --bs-btn-active-border-color: var(--bs-info);
+  --bs-btn-disabled-color: var(--bs-info);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-info);
+  --bs-gradient: none;
+}
+
+.btn-warning {
+  --bs-btn-color: rgb(from var(--bs-warning) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-warning);
+  --bs-btn-border-color: var(--bs-warning);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-warning) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-warning)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-warning) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-warning));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-warning) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-warning));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-warning) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-warning)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-warning) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-warning));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-warning) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-warning));
+  --bs-btn-disabled-color: rgb(from var(--bs-warning) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-warning);
+  --bs-btn-disabled-border-color: var(--bs-warning);
+}
+
+.btn-outline-warning {
+  --bs-btn-color: var(--bs-warning);
+  --bs-btn-border-color: var(--bs-warning);
+  --bs-btn-hover-color: rgb(from var(--bs-warning) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-warning);
+  --bs-btn-hover-border-color: var(--bs-warning);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-warning) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-warning);
+  --bs-btn-active-border-color: var(--bs-warning);
+  --bs-btn-disabled-color: var(--bs-warning);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-warning);
+  --bs-gradient: none;
+}
+
+.btn-danger {
+  --bs-btn-color: rgb(from var(--bs-danger) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-danger);
+  --bs-btn-border-color: var(--bs-danger);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-danger) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-danger)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-danger) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-danger));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-danger) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-danger));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-danger) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-danger)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-danger) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-danger));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-danger) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-danger));
+  --bs-btn-disabled-color: rgb(from var(--bs-danger) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-danger);
+  --bs-btn-disabled-border-color: var(--bs-danger);
+}
+
+.btn-outline-danger {
+  --bs-btn-color: var(--bs-danger);
+  --bs-btn-border-color: var(--bs-danger);
+  --bs-btn-hover-color: rgb(from var(--bs-danger) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-danger);
+  --bs-btn-hover-border-color: var(--bs-danger);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-danger) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-danger);
+  --bs-btn-active-border-color: var(--bs-danger);
+  --bs-btn-disabled-color: var(--bs-danger);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-danger);
+  --bs-gradient: none;
+}
+
+.btn-light {
+  --bs-btn-color: rgb(from var(--bs-light) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-light);
+  --bs-btn-border-color: var(--bs-light);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-light) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-light)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-light) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-light));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-light) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-light));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-light) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-light)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-light) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-light));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-light) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-light));
+  --bs-btn-disabled-color: rgb(from var(--bs-light) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-light);
+  --bs-btn-disabled-border-color: var(--bs-light);
+}
+
+.btn-outline-light {
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-border-color: var(--bs-light);
+  --bs-btn-hover-color: rgb(from var(--bs-light) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-light);
+  --bs-btn-hover-border-color: var(--bs-light);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-light) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-light);
+  --bs-btn-active-border-color: var(--bs-light);
+  --bs-btn-disabled-color: var(--bs-light);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-light);
+  --bs-gradient: none;
+}
+
+.btn-dark {
+  --bs-btn-color: rgb(from var(--bs-dark) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-bg: var(--bs-dark);
+  --bs-btn-border-color: var(--bs-dark);
+  --bs-btn-hover-color: rgb(from color-mix(in srgb, rgb(from var(--bs-dark) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 15%, var(--bs-dark)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: color-mix(in srgb, rgb(from var(--bs-dark) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 15%, var(--bs-dark));
+  --bs-btn-hover-border-color: color-mix(in srgb, rgb(from var(--bs-dark) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-dark));
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $btn-focus-shadow r g b / .5);
+  --bs-btn-active-color: rgb(from color-mix(in srgb, rgb(from var(--bs-dark) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255)) calc(clamp(0, ((((r * 299) + (g * 587) + (b * 114)) / 1000) - 128) * 1000 * -1, 255))) 20%, var(--bs-dark)) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: color-mix(in srgb, rgb(from var(--bs-dark) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-dark));
+  --bs-btn-active-border-color: color-mix(in srgb, rgb(from var(--bs-dark) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 25%, var(--bs-dark));
+  --bs-btn-disabled-color: rgb(from var(--bs-dark) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-disabled-bg: var(--bs-dark);
+  --bs-btn-disabled-border-color: var(--bs-dark);
+}
+
+.btn-outline-dark {
+  --bs-btn-color: var(--bs-dark);
+  --bs-btn-border-color: var(--bs-dark);
+  --bs-btn-hover-color: rgb(from var(--bs-dark) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-hover-border-color: var(--bs-dark);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(from $color r g b / .5);
+  --bs-btn-active-color: rgb(from var(--bs-dark) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ) calc(
+    clamp(
+      0,
+      (
+        (
+          (
+            (r * 299) +
+            (g * 587) +
+            (b * 114)
+          ) / 1000
+        ) - 128
+      ) * 1000 * -1,
+      255
+    )
+  ));
+  --bs-btn-active-bg: var(--bs-dark);
+  --bs-btn-active-border-color: var(--bs-dark);
+  --bs-btn-disabled-color: var(--bs-dark);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-dark);
+  --bs-gradient: none;
+}
+
+*:focus,
+.form-check:focus {
+  box-shadow: 0 0 0 0.25rem rgba(from var(--bs-#0d6efd) r g b/0.25);
+}
+
+.form-check:focus {
+  border-color: var(--bs-#0d6efd);
+  outline: 0;
+}
+.form-check:checked {
+  background-color: var(--bs-primary, #0d6efd);
+  border-color: #0d6efd;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 $accordion-btn-focus-width rgba(from var(--bs-primary) r g b / .25);
+}

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Bootstrap Customize</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#pagenav" data-bs-offset="50" tabindex="0">
+    <%- include('./parts/header.ejs') -%>
+    <main class="d-flex">
+      <div class="sidebar p-3">
+        <%- include('./parts/form.ejs') -%>
+      </div>
+      <div class="main py-4">
+        <div class="container">
+          <%- include('./parts/examples.ejs') -%>
+        </div>
+      </div>
+      <div class="toc">
+        <%- include('./parts/pagenav.ejs') -%>
+      </div>
+    </main>
+    <%- include('./parts/footer.ejs') -%>
+    <%- include('./parts/code.ejs') -%>
+    <%- include('./parts/about.ejs') -%>
+    <script src="%PUBLIC_URL%themeEditorKit.min.js"></script>
+    <script src="%PUBLIC_URL%bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%popper.min.js"></script>
+  </body>
+</html>
