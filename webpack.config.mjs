@@ -25,6 +25,7 @@ export default {
           options: {
             sassOptions: {
               functions: scssf.env,
+              quietDeps: true,
               includePaths: [
                 path.resolve(__dirname, 'node_modules'),
               ],
