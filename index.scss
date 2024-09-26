@@ -84,16 +84,18 @@
 
 // Links
 a {
-  $link-color-base: var(--#{$prefix}link-color, $link-color);
-  $link-color: rgba(from #{$link-color-base} r g b / var(--#{$prefix}link-opacity, 1));
-  $link-color-contrast: colorContrast($link-color-base, $color-contrast-dark, $color-contrast-light);
-  $link-hover-color-base: color-mix(in srgb, $link-color-contrast $link-shade-percentage, $link-color-base);
-  $link-hover-color: rgba(from $link-hover-color-base r g b / var(--#{$prefix}link-hover-opacity, 1));
-  color: var(--#{$prefix}link-color, var(--#{$prefix}primary, $link-color));
+  &:not(.navbar-brand):not(.nav-link):not(.btn) {
+    $link-color-base: var(--#{$prefix}link-color, $link-color);
+    $link-color: rgba(from #{$link-color-base} r g b / var(--#{$prefix}link-opacity, 1));
+    $link-color-contrast: colorContrast($link-color-base, $color-contrast-dark, $color-contrast-light);
+    $link-hover-color-base: color-mix(in srgb, $link-color-contrast $link-shade-percentage, $link-color-base);
+    $link-hover-color: rgba(from $link-hover-color-base r g b / var(--#{$prefix}link-hover-opacity, 1));
+    color: var(--#{$prefix}link-color, var(--#{$prefix}primary, $link-color));
 
-  &:hover {
-    // color: var(--#{$prefix}link-hover-color, $link-hover-color);
-    color: $link-hover-color;
+    &:hover {
+      // color: var(--#{$prefix}link-hover-color, $link-hover-color);
+      color: $link-hover-color;
+    }
   }
 }
 

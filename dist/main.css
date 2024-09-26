@@ -57,10 +57,10 @@
   --bs-dark-border-subtle: var(--bs-gray-800, #343a40);
 }
 
-a {
+a:not(.navbar-brand):not(.nav-link):not(.btn) {
   color: var(--bs-link-color, var(--bs-primary, rgba(from var(--bs-link-color, #0d6efd) r g b/var(--bs-link-opacity, 1))));
 }
-a:hover {
+a:not(.navbar-brand):not(.nav-link):not(.btn):hover {
   color: rgba(from color-mix(in srgb, rgb(from var(--bs-link-color, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-link-color, #0d6efd)) r g b/var(--bs-link-hover-opacity, 1));
 }
 
