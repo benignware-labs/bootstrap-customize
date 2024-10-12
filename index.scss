@@ -93,7 +93,6 @@ a {
     color: var(--#{$prefix}link-color, var(--#{$prefix}primary, $link-color));
 
     &:hover {
-      // color: var(--#{$prefix}link-hover-color, $link-hover-color);
       color: $link-hover-color;
     }
   }
