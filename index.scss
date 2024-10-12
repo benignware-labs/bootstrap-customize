@@ -84,7 +84,7 @@
 
 // Links
 a {
-  &:not(.navbar-brand):not(.nav-link):not(.btn) {
+  &:not(.navbar-brand):not(.nav-link):not(.btn):not([role="button"]):not([class*"button"]) {
     $link-color-base: var(--#{$prefix}link-color, $link-color);
     $link-color: rgba(from #{$link-color-base} r g b / var(--#{$prefix}link-opacity, 1));
     $link-color-contrast: colorContrast($link-color-base, $color-contrast-dark, $color-contrast-light);
@@ -223,7 +223,6 @@ a {
   }
 }
 
-*,
 .form-check-input {
   $focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / #{$focus-ring-opacity});
   $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
