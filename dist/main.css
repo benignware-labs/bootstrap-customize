@@ -57,10 +57,10 @@
   --bs-dark-border-subtle: var(--bs-gray-800, #343a40);
 }
 
-a:not(.navbar-brand):not(.nav-link):not(.btn) {
+body a:not(.navbar-brand):not(.navbar-brand *):not(.nav-link):not(.btn):not([role=button]):not([rel]):not([class*=button]) {
   color: var(--bs-link-color, var(--bs-primary, rgba(from var(--bs-link-color, #0d6efd) r g b/var(--bs-link-opacity, 1))));
 }
-a:not(.navbar-brand):not(.nav-link):not(.btn):hover {
+body a:not(.navbar-brand):not(.navbar-brand *):not(.nav-link):not(.btn):not([role=button]):not([rel]):not([class*=button]):hover {
   color: rgba(from color-mix(in srgb, rgb(from var(--bs-link-color, #0d6efd) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) ) calc( clamp( 0, ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) - 128 ) * 1000 * -1, 255 ) )) 20%, var(--bs-link-color, #0d6efd)) r g b/var(--bs-link-hover-opacity, 1));
 }
 
@@ -2616,7 +2616,6 @@ a:not(.navbar-brand):not(.nav-link):not(.btn):hover {
   --bs-gradient: none;
 }
 
-*:focus,
 .form-check-input:focus {
   box-shadow: 0 0 0 0.25rem rgba(from var(--bs-primary) r g b/0.25);
 }
