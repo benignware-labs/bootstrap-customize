@@ -8,6 +8,7 @@
     "url": "https://github.com/benignware-labs/bootstrap-customize.git"
   },
   "scripts": {
+    "start": "npm run demo:serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -c webpack.config.mjs",
     "watch": "webpack -c webpack.config.mjs --watch",

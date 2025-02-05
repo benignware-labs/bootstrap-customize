@@ -1,16 +1,34 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 
-import { scssf } from 'cssf/peer/sass.mjs';
+import { scssf } from 'cssf/peer';
+import { LegacyColorVarsPlugin } from 'cssf/addons';
+
+scssf.use(new LegacyColorVarsPlugin({
+  identifiers: [
+    '--bs-primary',
+    '--bs-secondary',
+    '--bs-info',
+    '--bs-success',
+    '--bs-warning',
+    '--bs-danger',
+    '--bs-light',
+    '--bs-dark',
+  ],
+  functions: [],
+  styles: [],
+}));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
   mode: process.env.NODE_ENV || 'development',
-  entry: path.resolve(__dirname, 'index.scss'),
+  entry: [
+    path.resolve(__dirname, 'index.scss'),
+    path.resolve(__dirname, 'index.js'),
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
   },
@@ -34,6 +52,10 @@ export default {
           }
         }
       ]
+    }, {
+      test: /\.m?js$/,
+      exclude: /node_modules/,
+
     }]
   },
   optimization: {
@@ -41,6 +63,5 @@ export default {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    // new CssMinimizerPlugin(),
   ]
 };

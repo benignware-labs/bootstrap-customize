@@ -11,6 +11,7 @@
 :root, [data-bs-theme=light] {
   --#{$prefix}link-color: var(--#{$prefix}primary);
   --#{$prefix}focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / var(--#{$prefix}focus-ring-opacity, $focus-ring-opacity));
+  
   // Colors
   @each $name, $value in $theme-colors {
     $text-emphasis: color-mix(in srgb, var(--#{$prefix}#{$name}), $color-contrast-dark 60%);
@@ -49,11 +50,13 @@
   // Colors
   @each $name, $value in $theme-colors {
     $text-emphasis: color-mix(in srgb, var(--#{$prefix}#{$name}), $color-contrast-light 40%);
+    
     @if ($name == 'light') {
       $text-emphasis: var(--#{$prefix}gray-100, $gray-100);
     } @else if ($name == 'dark') {
       $text-emphasis: var(--#{$prefix}gray-300, $gray-300);
     }
+
     --#{$prefix}#{$name}-text-emphasis: #{$text-emphasis};
   }
 
@@ -165,11 +168,12 @@ body a:not[class*="btn"]:not[class*="button"]:not([role="button"]) {
     $background: var(--#{$prefix}#{$name});
     $border: $background;
     $contrast: colorContrast($background, $color-contrast-dark, $color-contrast-light);
-    $hover-background: color-mix(in srgb, $contrast $btn-hover-bg-shade-amount, $background);
+    $anti-contrast: colorContrast($contrast, $color-contrast-light, $color-contrast-dark);
+    $hover-background: color-mix(in srgb, $background, $anti-contrast $btn-hover-bg-shade-amount);
     $hover-color: colorContrast($hover-background, $color-contrast-dark, $color-contrast-light);
-    $hover-border: color-mix(in srgb, $contrast $btn-hover-border-shade-amount, $background);
-    $active-background: color-mix(in srgb, $contrast $btn-active-bg-shade-amount, $background);
-    $active-border: color-mix(in srgb, $contrast $btn-active-border-shade-amount, $background);
+    $hover-border: color-mix(in srgb, $background, $anti-contrast $btn-hover-border-shade-amount);
+    $active-background: color-mix(in srgb, $background, $anti-contrast $btn-active-bg-shade-amount);
+    $active-border: color-mix(in srgb, $background, $anti-contrast $btn-active-border-shade-amount);
     $active-color: colorContrast($active-background, $color-contrast-dark, $color-contrast-light);
     $disabled-background: $background;
     $disabled-border: $border;
@@ -184,7 +188,7 @@ body a:not[class*="btn"]:not[class*="button"]:not([role="button"]) {
     --#{$prefix}btn-hover-bg: #{$hover-background};
     --#{$prefix}btn-hover-border-color: #{$hover-border};
     // --#{$prefix}btn-focus-shadow-rgb: #{to-rgb(mix($color, $border, 15%))};
-    --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(from $btn-focus-shadow r g b / .5);
+    --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(from #{$btn-focus-shadow} r g b / .5);
     --#{$prefix}btn-active-color: #{$active-color};
     --#{$prefix}btn-active-bg: #{$active-background};
     --#{$prefix}btn-active-border-color: #{$active-border};
