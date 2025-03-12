@@ -86,7 +86,8 @@
 }
 
 // Links
-body a:not[class*="btn"]:not[class*="button"]:not([role="button"]) {
+// body a:not[class*="btn"]:not[class*="button"]:not([role="button"]) {
+a {
   $link-color-base: var(--#{$prefix}link-color, $link-color);
   $link-color: rgba(from #{$link-color-base} r g b / var(--#{$prefix}link-opacity, 1));
   $link-color-contrast: colorContrast($link-color-base, $color-contrast-dark, $color-contrast-light);
@@ -220,6 +221,15 @@ body a:not[class*="btn"]:not[class*="button"]:not([role="button"]) {
     --#{$prefix}btn-disabled-bg: transparent;
     --#{$prefix}btn-disabled-border-color: #{$color};
     --#{$prefix}gradient: none;
+  }
+}
+
+.form-control {
+  &:focus {
+    $focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / #{$focus-ring-opacity});
+    $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+    box-shadow: $focus-ring-box-shadow;
+    border-color: $focus-ring-color;
   }
 }
 
