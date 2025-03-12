@@ -224,7 +224,8 @@ a {
   }
 }
 
-.form-control {
+.form-control,
+.form-select {
   &:focus {
     $focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / #{$focus-ring-opacity});
     $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
