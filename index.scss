@@ -11,7 +11,7 @@
 :root, [data-bs-theme=light] {
   --#{$prefix}link-color: var(--#{$prefix}primary);
   --#{$prefix}focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / var(--#{$prefix}focus-ring-opacity, $focus-ring-opacity));
-  
+
   // Colors
   @each $name, $value in $theme-colors {
     $text-emphasis: color-mix(in srgb, var(--#{$prefix}#{$name}), $color-contrast-dark 60%);
@@ -288,7 +288,14 @@ a {
   }
 }
 
-
 .accordion {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 $accordion-btn-focus-width rgba(from var(--#{$prefix}primary) r g b / .25);
+}
+
+.dropdown-menu {
+  $dropdown-link-active-bg: #{var(--#{$prefix}primary)};
+  $dropdown-link-active-color: colorContrast($dropdown-link-active-bg, $color-contrast-dark, $color-contrast-light);
+  
+  --bs-dropdown-link-active-bg: var(--#{$prefix}component-active-bg, #{$dropdown-link-active-bg});
+  --bs-dropdown-link-active-color: var(--#{$prefix}component-active-color, #{$dropdown-link-active-color});
 }

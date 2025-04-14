@@ -65,6 +65,11 @@
   background-color: var(--bs-tertiary-bg);
 }
 
+.bd-example > .dropdown-menu {
+  position: static;
+  display: block;
+}
+
 .font-selector {
   position: relative;
   /* display: inline-block; */
