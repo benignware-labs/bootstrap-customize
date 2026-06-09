@@ -7,10 +7,10 @@
 @import "~bootstrap/scss/_mixins.scss";
 @import "~bootstrap/scss/_utilities.scss";
 
-
 :root, [data-bs-theme=light] {
   --#{$prefix}link-color: var(--#{$prefix}primary);
   --#{$prefix}focus-ring-color: rgba(from var(--#{$prefix}primary) r g b / var(--#{$prefix}focus-ring-opacity, $focus-ring-opacity));
+  --#{$prefix}focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width #{var(--#{$prefix}focus-ring-color)};
 
   // Colors
   @each $name, $value in $theme-colors {
@@ -47,6 +47,8 @@
 }
 
 [data-bs-theme=dark] {
+  --#{$prefix}link-color: var(--#{$prefix}primary);
+
   // Colors
   @each $name, $value in $theme-colors {
     $text-emphasis: color-mix(in srgb, var(--#{$prefix}#{$name}), $color-contrast-light 40%);
@@ -298,4 +300,17 @@ a {
   
   --bs-dropdown-link-active-bg: var(--#{$prefix}component-active-bg, #{$dropdown-link-active-bg});
   --bs-dropdown-link-active-color: var(--#{$prefix}component-active-color, #{$dropdown-link-active-color});
+}
+
+.pagination {
+  --#{$prefix}pagination-active-bg: #{var(--#{$prefix}primary)};
+  --#{$prefix}pagination-active-border-color: #{var(--#{$prefix}primary)};
+  $link-color-base: var(--#{$prefix}link-color, $link-color);
+  $link-color: rgba(from #{$link-color-base} r g b / var(--#{$prefix}link-opacity, 1));
+  $link-color-contrast: colorContrast($link-color-base, $color-contrast-dark, $color-contrast-light);
+  $link-hover-color-base: color-mix(in srgb, $link-color-contrast $link-shade-percentage, $link-color-base);
+  $link-hover-color: rgba(from $link-hover-color-base r g b / var(--#{$prefix}link-hover-opacity, 1));
+  --#{$prefix}pagination-hover-color: #{$link-hover-color};
+  --#{$prefix}pagination-focus-color: #{$link-hover-color};
+  --#{$prefix}pagination-focus-box-shadow: var(--#{$prefix}focus-ring-box-shadow);
 }
